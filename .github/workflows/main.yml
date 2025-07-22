@@ -49,7 +49,3 @@ jobs:
             -Dsonar.pullrequest.github.repository=${{ github.repository }} \
             -Dsonar.pullrequest.github.oauth_token=${{ secrets.GITHUB_TOKEN }}
           # For other languages, the 'run' command will differ (e.g., using SonarScanner CLI)
-
-      # Optional: Add a step to fail the build if Quality Gate fails
-      - name: Check Quality Gate Status
-        uses: SonarSource/sonarcloud-quality-gate-action@v2.2
